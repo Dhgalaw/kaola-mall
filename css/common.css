@@ -11,6 +11,7 @@ body {
   margin: 0 auto;
 }
 
+/* 清除浮动 */
 .clear-fix::after {
 	content: "";
     display: block;
@@ -21,4 +22,21 @@ body {
 }
 .clear-fix {
 	*zoom: 1; /*兼容IE6~7浏览器*/
+}
+
+
+/* 三根横线组成的菜单图标 */
+.line-icon {
+  display: inline-block;
+}
+
+.line-icon i {
+  display: block;
+  width: 15px;
+  height: 2px;
+  background-color: #fff;
+  margin-top: 3px;
+}
+.line-icon .first {
+  margin-top: 0;
 }

@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+#top .tabbar {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+}
+
+#top .tabbar .category {
+  float: left;
+  width: 164px;
+  background: linear-gradient(90deg,#f00,#ff3264);
+  color: #fff;
+  font-size: 14px;
+}
+
+#top .tabbar .category .line-icon {
+  margin-left: 20px;
+}
+
+#top .tabbar .category span {
+  margin-left: 20px;
+}
+
+#top .tabbar .list {
+  float: left;
+  margin-left: 25px;
+}
+
+#top .tabbar .list li {
+  float: left;
+  margin-right: 10px;
+}
+
+#top .tabbar .list li a {
+  display: inline-block;
+  line-height: 40px;
+  padding: 0 20px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#top .tabbar .list li a:hover {
+  color: #ff1e32;
+}
+
+#top .tabbar .list li a.active {
+  color: #ff1e32;
+}
