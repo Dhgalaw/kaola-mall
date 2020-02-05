@@ -8,6 +8,7 @@
 }
 
 #top .tabbar .category {
+  position: relative;
   float: left;
   width: 164px;
   background: linear-gradient(90deg,#f00,#ff3264);
@@ -22,6 +23,57 @@
 #top .tabbar .category span {
   margin-left: 20px;
 }
+
+#top .tabbar .categories {
+  position: absolute;
+  z-index: 1;
+  width: 164px;
+  background: linear-gradient(90deg,#f00,#ff3264);
+
+}
+
+#top .tabbar .categories li {
+  border-top: 1px solid #ff5160;
+  padding: 0 3px 0 2px;
+}
+
+#top .tabbar .categories li a {
+  display: block;
+  height: 41px;
+  line-height: 41px;
+}
+
+#top .tabbar .categories li a:hover {
+  background-color: #fff;
+}
+
+#top .tabbar .categories li a img {
+  margin-left: 16px;
+  position: relative;
+  top: -1px;
+}
+
+#top .tabbar .categories li a img.active {
+  display: none;
+}
+
+#top .tabbar .categories li a:hover img {
+  display: none;
+}
+
+#top .tabbar .categories li a:hover img.active {
+  display: inline;
+}
+
+#top .tabbar .categories li a span {
+  color:#fff;
+  font-size: 15px;
+}
+
+#top .tabbar .categories li a:hover span {
+  color:#ff1e32;
+}
+
 
 #top .tabbar .list {
   float: left;
@@ -48,3 +100,152 @@
 #top .tabbar .list li a.active {
   color: #ff1e32;
 }
+
+/* 轮播图相关样式 */
+
+#top .banner {
+  overflow: hidden;
+  min-width: 1100px;
+  position: relative;
+}
+
+#top .banner .swiper {
+  display: inline-block;/*加上此属性使transfrom有效*/
+  position: relative;
+  
+  transform: translate(-50%,0);
+  left: 50%;
+}
+
+#top .banner .swiper:hover .control {
+  display: inline;
+}
+
+#top .banner .swiper .control {
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+
+  height: 68px;
+}
+
+#top .banner .swiper .control i {
+  width: 34px;
+  height: 68px;
+  background-image: url(../img/kl-sprite-01.png);
+}
+
+#top .banner .swiper .control .prev {
+  float: left;
+  margin-left: 170px;
+  background-position: -625px -68px;
+}
+
+#top .banner .swiper .control .prev:hover {
+  background-position: -625px -153px;
+}
+
+#top .banner .swiper .control .next {
+  float: right;
+  background-position: -670px -67px;
+}
+
+#top .banner .swiper .control .next:hover {
+  background-position: -670px -153px;
+}
+
+#top .banner .swiper .dots {
+  display: inline-block;
+  width: 1090px;
+  height: 60px;
+  position: absolute;
+  bottom: 75px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  
+}
+
+#top .banner .swiper .dots .dot {
+  position: absolute;
+  left: 190px;
+  bottom: 0;
+}
+
+#top .banner .swiper .dots .dot i {
+  display: inline-block;
+  height: 9px;
+  width: 9px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-left: 15px;
+}
+
+#top .banner .swiper .dots .dot i:hover {
+  background-color: #ff1e32;
+}
+
+
+
+/* 轮播图下面的服务 */
+
+#top .banner .service {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 45px;
+  overflow: hidden;
+}
+
+#top .banner .service .blur {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: url(../img/banner.jpg) bottom center;
+  filter: blur(8px);
+
+}
+
+#top .banner .service ul {
+  height: 46px;
+  line-height: 46px;
+  /* position: relative;
+  z-index: 1; */
+}
+
+#top .banner .service ul li {
+  float: left;
+  color: #fff;
+  font-size: 12px;
+  margin-right: 40px;
+}
+
+#top .banner .service ul a {
+  float: right;
+  color: #fff;
+  font-size: 12px;
+  margin-right: 40px;
+}
+
+
+/* 问题：后面的div被ul挡住之后怎么让它到上层 */
+/* #top .banner .service .dowload {
+  position: absolute;
+  z-index: 9;
+  background-color: red;
+  height: 46px;
+  
+}
+
+#top .banner .service .dowload a {
+  float: right;
+  height: 46px;
+  line-height: 46px;
+} */

@@ -78,8 +78,12 @@
 
 #header .operation {
   height: 100px;
-  /* background-color: #ff4; */
+  background-color: #fff;
   position: relative;
+}
+
+#header .operation .wrap {
+  height: 100px;
 }
 
 #header .operation img {
